@@ -24,7 +24,8 @@ public class Application{
 		Book b = new Book();
 		b.setBooktitle("ABC");
 		Example<Book>example = Example.of(b);
-		System.out.println(repository.findAll(example));
+		//System.out.println(repository.findAll(example));
+		System.out.println(repository.findByBooktitle("ABC"));
 		
 		System.out.println("Deleting ID:"+bookid);
 		repository.deleteById(bookid);
